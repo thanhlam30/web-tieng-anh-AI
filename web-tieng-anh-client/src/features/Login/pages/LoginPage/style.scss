@@ -1,0 +1,96 @@
+#form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+    background-color: #e9ecf3;
+}
+.overlay-container {
+    background-color: #ffffff;
+    display: flex;
+    padding: 6rem 3rem;
+    border-radius: 5px;
+}
+
+.left_side {
+    border-right: 1px solid #4b91ff;
+    padding: 0 2rem;
+}
+.right_side {
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin-bottom: 0.2rem !important;
+    }
+}
+
+.block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 5rem;
+
+    font-weight: 500;
+    margin: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    // & > div {
+    //     flex-grow: 1;
+    // }
+}
+
+.icon-login {
+    position: absolute;
+    left: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.block-google {
+    background-color: #d64937;
+    color: #ffffff;
+}
+
+.block-facebook {
+    background-color: #3a5794;
+    color: #ffffff;
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .left_side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-button {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    #form_wrapper {
+        display: block;
+        padding: 0;
+    }
+    .overlay-container {
+        flex-direction: column;
+    }
+    .left_side {
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+}

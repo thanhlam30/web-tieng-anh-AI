@@ -1,0 +1,18 @@
+.quiz-question-container {
+	padding: 24px 0px;
+
+	.ant-radio-group,
+	.ant-radio-button-wrapper,
+	.ant-radio-button {
+		width: 100%;
+	}
+
+	.ant-radio-button-wrapper {
+		border-radius: 50em !important;
+	}
+
+	.ant-btn {
+		width: 100%;
+		text-align: start;
+	}
+}

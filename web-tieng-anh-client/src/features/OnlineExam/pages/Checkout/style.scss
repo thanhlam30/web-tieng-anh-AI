@@ -1,0 +1,21 @@
+.checkout_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 0 5px;
+    .topic {
+        color: #d93425;
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        display: block;
+
+        padding: 1rem 0;
+    }
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

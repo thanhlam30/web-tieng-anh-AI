@@ -1,0 +1,22 @@
+.general-result {
+	&__type {
+		font-size: 20px;
+		// font-weight: bold;
+	}
+
+	&__mean {
+		// color: blue;
+	}
+
+	&__example {
+		color: rgba(0, 0, 0, 0.7);
+
+		li {
+			list-style-type: none;
+		}
+
+		li:last-child {
+			margin-bottom: 8px;
+		}
+	}
+}

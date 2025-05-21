@@ -1,0 +1,86 @@
+$text-color: #fff;
+$main-color: #4b91ff;
+$size-icon: 30px;
+$demesion-img: 120px;
+$black_text: #363636;
+
+.footer {
+  
+    &_left {
+        padding: 1rem 3rem;
+        display: flex;
+        flex-flow: column wrap;
+
+        &-logo-page img {
+            max-width: 100%;
+            height: calc(#{$demesion-img} - 20px);
+            width: $demesion-img;
+            object-fit: contain;
+        }
+
+        &-intro {
+            color: $black_text;
+            font-size: 1.6rem;
+        }
+
+        &-contact {
+            margin-top: 2.6rem;
+            display: flex;
+            &--logo-branch {
+                width: $size-icon;
+                height: $size-icon;
+                background-color: $main-color;
+                display: flex;
+
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: $text-color;
+
+                border: 1px solid $main-color;
+                box-shadow: 0 8px 8px -4px lightblue;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &--logo-branch ~ &--logo-branch {
+                margin-left: 30px;
+            }
+
+            &--logo-branch:hover {
+                background-color: #fff;
+                color: $main-color;
+            }
+        }
+    }
+
+    &_right {
+        padding: 1rem 3rem;
+
+        ul span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        li {
+            font-size: 1.6rem;
+            list-style-type: none;
+            padding-top: 10px;
+        }
+        ul {
+            padding-inline-start: 0;
+        }
+        a {
+            color: $black_text;
+            transition: all 0.2s ease-in-out;
+        }
+
+        li a:hover {
+            margin-left: 5px;
+        }
+
+        &-copyright {
+            text-align: center;
+            padding: 3rem 0;
+            color: #666;
+        }
+    }
+}

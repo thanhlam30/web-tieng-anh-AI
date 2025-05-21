@@ -1,0 +1,46 @@
+#signup-main-page {
+  background-color: #e9ecf3;
+  padding: 5rem 0;
+
+  height: 80vh;
+
+
+  .main {
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  #login-main-page {
+    background-color: white;
+    height: 40vh;
+    .main {
+        width: 100%;
+        padding: 0 20px;
+    
+      }
+
+  }
+
+}
+
+@media (max-width: 739px) {
+    #login-main-page {
+        background-color: white;
+        height: 40vh;
+        .main {
+            width: 100%;
+            padding: 0 20px;
+        
+          }
+    
+      }
+  
+
+}
+
+

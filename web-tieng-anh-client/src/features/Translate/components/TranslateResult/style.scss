@@ -1,0 +1,36 @@
+.translate-result {
+	background-color: white;
+	border-radius: 20px;
+	padding: 0px 24px;
+
+	width: 100%;
+	min-height: 65vh;
+	transition: ease-in-out;
+
+	.header-result {
+		min-height: 50px;
+		padding: 12px 0px 0px;
+		color: black;
+
+		display: flex;
+		justify-content: start;
+		font-size: 2rem;
+
+		&__word {
+			color: #4b91ff;
+		}
+
+		&__pronounce {
+			font-size: 2rem;
+			font-weight: normal;
+		}
+	}
+
+	.ant-tabs-top {
+		border-top: rgba(0, 0, 0, 0.2) solid 0.5px;
+	}
+	.ant-tabs-content{
+		height: calc(65vh - 50px); 
+		overflow-y: auto;
+	}
+}

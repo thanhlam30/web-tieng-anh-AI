@@ -1,0 +1,30 @@
+.word-fill-question {
+	&__user-answer {
+		margin: 24px 0px;
+		// padding: 12px;
+		.dashed {
+			padding-bottom: 12px;
+			min-height: 68px;
+			border-bottom: 3px #afafaf dashed;
+		}
+	}
+	&__suggested-words {
+		.space {
+			width: 100%;
+			margin-top: 8px;
+		}
+	}
+
+	.answer {
+		cursor: text;
+		color: #797979;
+		border: #797979 solid #797979;
+	}
+
+	.hide {
+		color: #e5e5e5 !important;
+		background-color: #e5e5e5;
+		border: #e5e5e5 solid #e5e5e5;
+		cursor: default !important;
+	}
+}

@@ -1,0 +1,12 @@
+#translate-main-page {
+	min-height: calc(100vh - 44px);
+	height: auto;
+	padding: 32px 25vw;
+
+	background-image: url("../../../../assets/images/bg-translate.png");
+	color: white;
+
+	.search-box {
+		margin: 24px 0px 32px;
+	}
+}

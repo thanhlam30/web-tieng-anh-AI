@@ -1,0 +1,87 @@
+.video-more_card {
+    display: flex;
+    align-items: center;
+
+    &--link {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    &--link:hover {
+        text-decoration: underline;
+    }
+
+    &-left {
+        width: 50%;
+        height: 110px;
+    }
+    &-right {
+        padding: 10px;
+        text-align: center;
+    }
+
+    &_content {
+        position: relative;
+        margin-bottom: 10px;
+        &-image {
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                background-position: center center;
+                height: 100px;
+                width: 100%;
+                transition: all 0.6s ease-in-out 0s;
+            }
+        }
+
+        &-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.25s ease-in-out 0s;
+        }
+
+        &-info {
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            left: 0;
+
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+
+            &--duration {
+                color: #fff;
+                background-color: black;
+                padding: 2px 5px;
+            }
+        }
+    }
+
+    &-right {
+        width: 50%;
+    }
+
+    &:hover &_content-overlay {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &:hover &_content-image > img {
+        transform: scale(1.1);
+        transition: all 0.25s ease-in-out 0s;
+    }
+}

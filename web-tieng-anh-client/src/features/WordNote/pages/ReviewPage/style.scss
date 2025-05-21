@@ -1,0 +1,89 @@
+@mixin button-style(
+	$button-color,
+	$text-color,
+	$border-color,
+	$boder-size: 2px
+) {
+	box-shadow: $border-color 0px 4px 0px 0px;
+	@include button-hover($button-color, $text-color, $border-color, $boder-size);
+}
+
+@mixin button-hover(
+	$button-color,
+	$text-color,
+	$border-color,
+	$boder-size: 2px
+) {
+	color: $text-color;
+	background-color: $button-color;
+	border: $boder-size solid $border-color;
+}
+
+@mixin button-active(
+	$button-color,
+	$text-color,
+	$border-color,
+	$boder-size: 2px
+) {
+	box-shadow: $border-color 0px 0px 0px 0px;
+	transform: translateY(4px);
+	@include button-hover($button-color, $text-color, $border-color, $boder-size);
+}
+
+#review-page {
+	position: relative;
+	.overlay {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.disable {
+	cursor: not-allowed !important;
+	color: #afafaf;
+	opacity: 0.5;
+}
+
+.btn {
+	padding: 12px 16px;
+	font-weight: bold;
+	border-radius: 12px;
+	cursor: pointer;
+
+	&--normal {
+		@include button-style(white, #afafaf, #e5e5e5);
+
+		&:not(.answer):not(.disable):hover {
+			@include button-hover(#e5e5e5, #a6a6a6, #cecece);
+		}
+
+		&:not(.answer):active {
+			@include button-active(#e5e5e5, #a6a6a6, #cecece);
+		}
+	}
+
+	&--success {
+		@include button-style(#58cc02, white, #58a700);
+
+		&:hover {
+			@include button-hover(#58cc02, white, #58a700);
+		}
+
+		&:active {
+			@include button-active(#58cc02, white, #58a700);
+		}
+	}
+
+	&--danger {
+		@include button-style(#ff4b4b, white, #ea2b2b);
+
+		&:hover {
+			@include button-hover(#ff4b4b, white, #ea2b2b);
+		}
+		&:active {
+			@include button-active(#ff4b4b, white, #ea2b2b);
+		}
+	}
+}

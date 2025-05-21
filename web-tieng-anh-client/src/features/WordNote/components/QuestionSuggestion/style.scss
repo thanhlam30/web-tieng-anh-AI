@@ -1,0 +1,25 @@
+// .review-question {
+// position: relative;
+// overflow: hidden;
+// display: flex;
+// justify-content: space-between;
+// width: 100%;
+
+// &__image {
+// width: 40%;
+// // flex: 2;
+.question-suggestion {
+	margin-top: 12px;
+	img {
+		width: 100%;
+		height: 180px;
+		// height: 100%;
+		object-fit: cover;
+	}
+}
+// }
+// &__definition {
+// flex: 1;
+// margin-left: 12px;
+// 	}
+// }

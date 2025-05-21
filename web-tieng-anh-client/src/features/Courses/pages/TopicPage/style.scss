@@ -1,0 +1,93 @@
+#topic-page {
+	
+	.topic-thumbnail {
+		position: relative;
+		// overflow-y: auto;
+		min-height: 40vh;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		img {
+			width: 100vw;
+			height: 40vh;
+			vertical-align: middle;
+			object-fit: cover;
+		}
+
+		&__title {
+			font-size: 5.5vh;
+			// font-size: 3.3vw;
+			// font-size: 5rem;
+			font-weight: bold;
+			color: white;
+		}
+		&__description {
+			font-size: 3vh;
+			// font-size: 1.3vw;
+			// font-size: 2.3rem;
+			padding: 12px 0px;
+		}
+		&__word-count {
+			font-size: 2.5vh;
+			// font-size: 1.1vw;
+			// font-size: 1.7rem;
+		}
+
+		&__overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+
+			width: 100%;
+			height: 100%;
+			padding: 0px 10vw;
+
+			color: rgba(255, 255, 255, 0.8);
+			background-color: rgba(0, 0, 0, 0.7);
+			opacity: 1;
+			transition: all 0.25s ease 0s;
+		}
+	}
+	.pagination-top {
+		background-color: rgb(240, 240, 240);
+		padding: 18px 0px;
+		left: 0;
+		right: 0;
+		// box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		// box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.35);
+	}
+}
+.topic-page__content {
+	margin: 0px 10vw;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+	#topic-page .topic-thumbnail__description {
+		font-size: 2.5vh;
+	}
+	#topic-page .topic-thumbnail__title {
+		font-size: 4.5vh;
+	}
+
+	#topic-page .topic-thumbnail__word-count {
+		font-size: 2vh;
+	}
+}
+
+@media (max-width: 739px) {
+	#topic-page .topic-thumbnail__description {
+		font-size: 2vh;
+	}
+	#topic-page .topic-thumbnail__title {
+		font-size: 4vh;
+	}
+
+	#topic-page .topic-thumbnail__word-count {
+		font-size: 1.5vh;
+	}
+}

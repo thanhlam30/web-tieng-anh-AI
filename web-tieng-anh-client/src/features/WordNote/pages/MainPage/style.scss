@@ -1,0 +1,15 @@
+#word-note-main-page {
+	.add-word-note {
+		background-color: rgba(0, 0, 0, 0.1);
+		color: black;
+		font-size: 2rem;
+
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+
+		.ant-typography {
+			margin: 0px;
+		}
+	}
+}

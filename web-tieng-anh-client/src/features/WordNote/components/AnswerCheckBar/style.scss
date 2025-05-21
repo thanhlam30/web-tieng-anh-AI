@@ -1,0 +1,36 @@
+.answer-check-bar {
+	background-color: #f2f2f2;
+	// border: 2px rgb(218, 218, 218) solid;
+	padding: 24px;
+	margin: 24px -32px -24px;
+	z-index: 2;
+
+	border-radius: 0px 0px 20px 20px;
+
+	&--success {
+		background-color: #d7ffb8;
+	}
+	&--danger {
+		background-color: #ffdfe0;
+	}
+
+	.notification {
+		height: 100%;
+	}
+
+	.user-anwer {
+		display: flex;
+		align-items: center;
+
+		.ant-typography {
+			margin: 0px;
+		}
+
+		&--success {
+			color: #58a700;
+		}
+		&--danger {
+			color: #eb3232;
+		}
+	}
+}

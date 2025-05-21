@@ -1,0 +1,113 @@
+$primary: #2563eb;
+$bg-ai: #f3f4f6;
+$bg-user: #3b82f6;
+
+.chat-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0f2fe, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.chat-box {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  min-height: 800px;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    color: $primary;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3.25rem;
+  }
+
+  .chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .message-bubble {
+    max-width: 75%;
+    padding: 1.2rem 1.6rem 1.6rem 2.5rem; // padding rộng để tránh đè nút loa
+    border-radius: 1rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    position: relative;
+    min-height: 4.5rem; // 👈 tăng chiều cao tối thiểu để tránh đè icon
+
+    &.user {
+      background: $bg-user;
+      color: white;
+      align-self: flex-end;
+      border-bottom-right-radius: 0;
+    }
+
+    &.ai {
+      background: $bg-ai;
+      color: #111827;
+      align-self: flex-start;
+      border-bottom-left-radius: 0;
+
+      .speak-btn {
+        position: absolute;
+        bottom: 6px;
+        left: 12px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        font-size: 1.4rem; // 👈 tăng kích thước icon loa
+        color: #6b7280;
+        cursor: pointer;
+
+        &:hover {
+          color: #111827;
+        }
+      }
+    }
+  }
+
+  .chat-input-area {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto; // 👈 đẩy xuống dưới cùng của khung chat
+
+    input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.75rem;
+      font-size: 1.5rem;
+      outline: none;
+    }
+
+    button {
+      padding: 0 1.2rem;
+      background: $primary;
+      color: white;
+      border: none;
+      border-radius: 0.75rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      &:disabled {
+        background: #9ca3af;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

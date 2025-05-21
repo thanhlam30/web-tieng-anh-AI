@@ -1,0 +1,65 @@
+$red: #d93425;
+$blue: #4b91ff;
+
+.result {
+    &_wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+      
+        padding: 0 5px;
+        .topic {
+            color: #d93425;
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            display: block;
+
+            padding: 1rem 0;
+        }
+    }
+
+    &_infomation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &_title_test {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &_info_additional {
+        font-style: italic;
+    }
+
+    &_total_score {
+        text-align: center;
+
+        span:first-child {
+            font-size: 3rem;
+            font-weight: 500;
+            color: $blue;
+        }
+
+        span:last-child {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $blue;
+
+            border-radius: 0.5rem;
+        }
+    }
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+}

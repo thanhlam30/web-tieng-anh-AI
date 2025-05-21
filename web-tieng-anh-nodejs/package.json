@@ -1,0 +1,44 @@
+{
+  "name": "web-tieng-anh-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhtienzz123/web-tieng-anh-nodejs.git"
+  },
+  "keywords": [
+    "web",
+    "tieng",
+    "anh",
+    "-",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Tien Huynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhtienzz123/web-tieng-anh-nodejs/issues"
+  },
+  "homepage": "https://github.com/anhtienzz123/web-tieng-anh-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.4.0",
+    "mongoose": "^5.13.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "slug": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}

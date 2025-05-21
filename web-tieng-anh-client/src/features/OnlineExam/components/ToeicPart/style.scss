@@ -1,0 +1,20 @@
+.toeic_part {
+    padding: 1rem 0;
+}
+
+.title_question {
+    font-weight: 700;
+    color: #666;
+}
+
+.question--img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+   
+
+    img {
+        max-width: 100%;
+        max-height: 400px;
+    }
+}

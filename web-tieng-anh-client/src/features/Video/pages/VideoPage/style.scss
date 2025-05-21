@@ -1,0 +1,13 @@
+.videopage {
+    &_wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding: 0 10px;
+    }
+    &_background {
+        background-color: #f7f8ff;
+        padding-bottom: 3rem;
+        padding: 3rem 0;
+    }
+}

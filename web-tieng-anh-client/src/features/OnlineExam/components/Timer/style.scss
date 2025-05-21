@@ -1,0 +1,36 @@
+.countdown_timer {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    span {
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    &--icon {
+        font-size: 3rem;
+    }
+}
+
+.timer_wrapper {
+    background-color: #4b91ff;
+    padding: 0.3rem 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    padding: 0 5px;
+}
+.countdown_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+    // .countdown_timer {
+    //     font-size: 1.8rem;
+    // }
+
+    // .countdown_time--icon {
+    //     font-size: 2.5rem;
+    // }
+}
