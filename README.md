@@ -15,6 +15,6 @@ WebTiengAnh: Backend sử dụng Spring boot, là backend chính của dự án
 
 web-tieng-anh-admin: Frontend giành cho người quản lý
 
-web-tieng-anh-client: Frontend giành cho người quản lý
+web-tieng-anh-client: Frontend giành cho người dùng cơ bản
 
 web-tieng-anh-nodejs: Backend để crawl data từ vựng rồi lưu vào Backend chính
